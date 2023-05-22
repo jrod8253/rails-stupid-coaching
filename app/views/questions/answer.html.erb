@@ -1,0 +1,17 @@
+<h1>Stupid Coaching</h1>
+
+<div class="container ms-4">
+  <div class="row d-block p-2">
+    <div class="col align-self-start border-start border-5">
+      <p><%= params[:question].capitalize %></p>
+      <p>~ You</p>
+    </div>
+  </div>
+  <div class="row d-block p-2">
+    <div class="col align-self-start border-start border-5 bg-warning bg-opacity-25">
+      <p><%= @answer %></p>
+      <p>~ Coach</p>
+    </div>
+  </div>
+  <%= link_to "Ask a new question", ask_path %>
+</div>
